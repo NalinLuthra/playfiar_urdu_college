@@ -4,6 +4,7 @@ class node {
   row: number;
   column: number;
   select: boolean;
+  num: number;
   constructor() {
     this.str = '';
     this.column = 0;
@@ -13,55 +14,55 @@ class node {
 }
 
 let arr: node[] = [
-  {"str":  'ا', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ب', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'پ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ت', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ٹ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ث', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ج', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'چ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ح', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'خ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'د', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ڈ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ذ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ر', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ڑ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ز', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ژ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'س', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ش', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ص', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ض', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ط', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ظ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ع', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'غ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ف', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ق', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ک', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'گ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ل', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'م', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ن', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ں', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'و', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ہ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ھ', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ء', "column" : 0 ,"row" : 0, "select" : true}, // Least used char at index 36
-  {"str":  'ی', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  'ے', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '0', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '1', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '2', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '3', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '4', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '5', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '6', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '7', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '8', "column" : 0 ,"row" : 0, "select" : true},
-  {"str":  '9', "column" : 0 ,"row" : 0, "select" : true}
+  {"str":  'ا', "column" : 0 ,"row" : 0, "select" : true, num: 0},
+  {"str":  'ب', "column" : 0 ,"row" : 0, "select" : true, num: 1},
+  {"str":  'پ', "column" : 0 ,"row" : 0, "select" : true, num: 2},
+  {"str":  'ت', "column" : 0 ,"row" : 0, "select" : true, num: 3},
+  {"str":  'ٹ', "column" : 0 ,"row" : 0, "select" : true, num: 4},
+  {"str":  'ث', "column" : 0 ,"row" : 0, "select" : true, num: 5},
+  {"str":  'ج', "column" : 0 ,"row" : 0, "select" : true, num: 6},
+  {"str":  'چ', "column" : 0 ,"row" : 0, "select" : true, num: 7},
+  {"str":  'ح', "column" : 0 ,"row" : 0, "select" : true, num: 8},
+  {"str":  'خ', "column" : 0 ,"row" : 0, "select" : true, num: 9},
+  {"str":  'د', "column" : 0 ,"row" : 0, "select" : true, num: 10},
+  {"str":  'ڈ', "column" : 0 ,"row" : 0, "select" : true, num: 11},
+  {"str":  'ذ', "column" : 0 ,"row" : 0, "select" : true, num: 12},
+  {"str":  'ر', "column" : 0 ,"row" : 0, "select" : true, num: 13},
+  {"str":  'ڑ', "column" : 0 ,"row" : 0, "select" : true, num: 14},
+  {"str":  'ز', "column" : 0 ,"row" : 0, "select" : true, num: 15},
+  {"str":  'ژ', "column" : 0 ,"row" : 0, "select" : true, num: 16},
+  {"str":  'س', "column" : 0 ,"row" : 0, "select" : true, num: 17},
+  {"str":  'ش', "column" : 0 ,"row" : 0, "select" : true, num: 18},
+  {"str":  'ص', "column" : 0 ,"row" : 0, "select" : true, num: 19},
+  {"str":  'ض', "column" : 0 ,"row" : 0, "select" : true, num: 20},
+  {"str":  'ط', "column" : 0 ,"row" : 0, "select" : true, num: 21},
+  {"str":  'ظ', "column" : 0 ,"row" : 0, "select" : true, num: 22},
+  {"str":  'ع', "column" : 0 ,"row" : 0, "select" : true, num: 23},
+  {"str":  'غ', "column" : 0 ,"row" : 0, "select" : true, num: 24},
+  {"str":  'ف', "column" : 0 ,"row" : 0, "select" : true, num: 25},
+  {"str":  'ق', "column" : 0 ,"row" : 0, "select" : true, num: 26},
+  {"str":  'ک', "column" : 0 ,"row" : 0, "select" : true, num: 27},
+  {"str":  'گ', "column" : 0 ,"row" : 0, "select" : true, num: 28},
+  {"str":  'ل', "column" : 0 ,"row" : 0, "select" : true, num: 29},
+  {"str":  'م', "column" : 0 ,"row" : 0, "select" : true, num: 30},
+  {"str":  'ن', "column" : 0 ,"row" : 0, "select" : true, num: 31},
+  {"str":  'ں', "column" : 0 ,"row" : 0, "select" : true, num: 32},
+  {"str":  'و', "column" : 0 ,"row" : 0, "select" : true, num: 33},
+  {"str":  'ہ', "column" : 0 ,"row" : 0, "select" : true, num: 34},
+  {"str":  'ھ', "column" : 0 ,"row" : 0, "select" : true, num: 35},
+  {"str":  'ء', "column" : 0 ,"row" : 0, "select" : true, num: 36}, // Least used char at index 36
+  {"str":  'ی', "column" : 0 ,"row" : 0, "select" : true, num: 37},
+  {"str":  'ے', "column" : 0 ,"row" : 0, "select" : true, num: 38},
+  {"str":  '0', "column" : 0 ,"row" : 0, "select" : true, num: 39},
+  {"str":  '1', "column" : 0 ,"row" : 0, "select" : true, num: 40},
+  {"str":  '2', "column" : 0 ,"row" : 0, "select" : true, num: 41},
+  {"str":  '3', "column" : 0 ,"row" : 0, "select" : true, num: 42},
+  {"str":  '4', "column" : 0 ,"row" : 0, "select" : true, num: 43},
+  {"str":  '5', "column" : 0 ,"row" : 0, "select" : true, num: 44},
+  {"str":  '6', "column" : 0 ,"row" : 0, "select" : true, num: 45},
+  {"str":  '7', "column" : 0 ,"row" : 0, "select" : true, num: 46},
+  {"str":  '8', "column" : 0 ,"row" : 0, "select" : true, num: 47},
+  {"str":  '9', "column" : 0 ,"row" : 0, "select" : true, num: 48}
 ];
 
 let key: string = "12 32 23 11 5 6 45 1 2 6 7 19";
@@ -169,28 +170,81 @@ for(let i=0;i<msgBreak.length;i=i+2) {
 }
 console.log('')
 
+
+let decoArr = []
+
+// encoding message
+
 for(let i=0;i<msgBreak.length;i = i + 2) {
   if(arr[parseInt(msgBreak[i])].column == arr[parseInt(msgBreak[i+1])].column) {
     encoMsg = encoMsg + ' ' +arr2d[(arr[parseInt(msgBreak[i])].row+1)%7][arr[parseInt(msgBreak[i])].column].str;
     encoMsg = encoMsg + ' ' +arr2d[(arr[parseInt(msgBreak[i+1])].row+1)%7][arr[parseInt(msgBreak[i])].column].str;
     encoMsg = encoMsg + ' ';
+    decoArr.push(arr2d[(arr[parseInt(msgBreak[i])].row+1)%7][arr[parseInt(msgBreak[i])].column].num)
+    decoArr.push(arr2d[(arr[parseInt(msgBreak[i+1])].row+1)%7][arr[parseInt(msgBreak[i])].column].num)
   }
   else if(arr[parseInt(msgBreak[i])].row == arr[parseInt(msgBreak[i+1])].row) {
-    // console.log('Same row ', arr[parseInt(msgBreak[i])].str , arr[parseInt(msgBreak[i+1])].str);
-    // console.log('Ecno msg', arr2d[arr[i].row][(arr[i].column+1)%7].str, arr2d[arr[i+1].row][(arr[i+1].column+1)%7].str)
-    encoMsg = encoMsg + ' ' + arr2d[arr[parseInt(msgBreak[i])].row][(arr[parseInt(msgBreak[i])].column+1)%7].str;
+    encoMsg = encoMsg + ' ' + arr2d[arr[parseInt(msgBreak[i])].row][(arr[parseInt(msgBreak[i])].column+1)%7].str;   
     encoMsg = encoMsg + ' ' + arr2d[arr[parseInt(msgBreak[i+1])].row][(arr[parseInt(msgBreak[i+1])].column+1)%7].str;
     encoMsg = encoMsg + ' ';
+    decoArr.push(arr2d[arr[parseInt(msgBreak[i])].row][(arr[parseInt(msgBreak[i])].column+1)%7].num)
+    decoArr.push(arr2d[arr[parseInt(msgBreak[i+1])].row][(arr[parseInt(msgBreak[i+1])].column+1)%7].num)
   }
   else {
-    // console.log((arr[parseInt(msgBreak[i+1])].column))
-    // console.log((arr[parseInt(msgBreak[i])].column))
     encoMsg = encoMsg + ' ' + arr2d[arr[parseInt(msgBreak[i])].row][(arr[parseInt(msgBreak[i+1])].column)%7].str;
     encoMsg = encoMsg + ' ' + arr2d[arr[parseInt(msgBreak[i+1])].row][(arr[parseInt(msgBreak[i])].column)%7].str;
     encoMsg = encoMsg + ' ';
+    decoArr.push(arr2d[arr[parseInt(msgBreak[i])].row][(arr[parseInt(msgBreak[i+1])].column)%7].num)
+    decoArr.push(arr2d[arr[parseInt(msgBreak[i+1])].row][(arr[parseInt(msgBreak[i])].column)%7].num)
   }
 }
 console.log('------------------------------------');
 console.log('Encoded Message :')
 
 console.log(encoMsg)
+
+let decoMsg:string ='';
+
+// Decoding message
+
+for(let i=0;i<decoArr.length;i = i + 2) {
+  if(arr[parseInt(decoArr[i])].column == arr[parseInt(decoArr[i+1])].column) {
+
+    let temp = (arr[parseInt(decoArr[i])].row-1)%7;
+    let temp1 = (arr[parseInt(decoArr[i+1])].row-1)%7
+    if( temp < 0) temp = 7 + temp;
+    if( temp1 < 0) temp1 = 7 + temp1;
+
+    decoMsg = decoMsg + ' ' +arr2d[(arr[parseInt(decoArr[i])].row-1)%7][arr[parseInt(decoArr[i])].column].str;
+    decoMsg = decoMsg + ' ' +arr2d[(arr[parseInt(decoArr[i+1])].row-1)%7][arr[parseInt(decoArr[i])].column].str;
+    decoMsg = decoMsg + ' ';
+    
+  }
+  else if(arr[parseInt(decoArr[i])].row == arr[parseInt(decoArr[i+1])].row) {
+    // console.log('Same row ', arr[parseInt(msgBreak[i])].str , arr[parseInt(msgBreak[i+1])].str);
+    let temp = (arr[parseInt(decoArr[i])].column-1)%7
+    let temp1 = (arr[parseInt(decoArr[i+1])].column-1)%7
+    if( temp < 0) temp = 7 + temp;
+    if( temp1 < 0) temp1 = 7 + temp1;
+
+    // console.log(12%7)
+    // console.log('Ecno msg', arr[parseInt(decoArr[i+1])].row,temp1)
+    decoMsg = decoMsg + ' ' + arr2d[arr[parseInt(decoArr[i])].row][temp].str;   
+    decoMsg = decoMsg + ' ' + arr2d[arr[parseInt(decoArr[i+1])].row][temp1].str;
+    decoMsg = decoMsg + ' ';
+    
+  }
+  else {
+    // console.log((arr[parseInt(msgBreak[i+1])].column))
+    // console.log((arr[parseInt(msgBreak[i])].column))
+    decoMsg = decoMsg + ' ' + arr2d[arr[parseInt(decoArr[i])].row][(arr[parseInt(decoArr[i+1])].column)%7].str;
+    decoMsg = decoMsg + ' ' + arr2d[arr[parseInt(decoArr[i+1])].row][(arr[parseInt(decoArr[i])].column)%7].str;
+    decoMsg = decoMsg + ' ';
+    
+  }
+}
+
+console.log('------------------------------------');
+console.log('Decoded Message :')
+
+console.log(decoMsg);
